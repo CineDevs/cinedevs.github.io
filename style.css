@@ -73,41 +73,9 @@ header {
     height: 60px;
 }
 /* Fim cabeçalho */
-
-/*#container_pricipal {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  
+.imagem-carrossel {
+    height: 500px;
 }
 
-#carrosel {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
-#container_intermediario {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
-#container_destaque_secundario {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-#containerfinal {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-#container_lateral {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-}*/
