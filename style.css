@@ -74,7 +74,7 @@ header {
 }
 /* Fim cabeçalho */
 
-#container_pricipal {
+/*#container_pricipal {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -110,4 +110,4 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-}
+}*/
