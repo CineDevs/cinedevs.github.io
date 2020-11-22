@@ -1,11 +1,12 @@
-export function somar(...params){
-    let soma = 0
-    params.map(obj => {
-        for(let item in obj){
-            soma += obj[item]
-        }
-    })
+/*inicio loadPage*/
+import {get} from "axios"
+function loadPage(){
+    let id = this.getAttribute("id")
+    let urlSerie = `src/posts/JSON/series/${id}.JSON`
 
-    return soma
+    get(urlSerie)
+    .then(response=>console.log(response.data))
+    .catch(err=>console.warn(err))
 }
-
+/*fim loadPage*/
+export{loadPage}
