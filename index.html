@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Cinedevs</title>
@@ -50,7 +54,7 @@
 
       <div id="f-02" class="carousel-item">
         <img class="d-block w-100 imagem-carrossel" src="src/posts/img_posts/filmes/f_02.jpg" alt="Mundo em Caos">
-          <div class="carousel-caption d-none d-md-block texto-carrossel">
+          <div class="carousel-caption d-none d-md-block">
             <h3>Conheça Mundo em Caos, nova ficção científica com Tom Holland e Daisy Ridley</h3>
             <h5>Escritor Patrick Ness conta como foi adaptar o próprio trabalho em um filme, que acaba de ganhar primeiro trailer exclusivo</h5>
           </div>
@@ -58,7 +62,7 @@
 
       <div id="f-03" class="carousel-item">
         <img class="d-block w-100 imagem-carrossel" src="src/posts/img_posts/filmes/f_03.jpg"  alt="Liga da Justiça">
-          <div class="carousel-caption d-none d-md-block texto-carrossel">
+          <div class="carousel-caption d-none d-md-block">
             <h3>Liga da Justiça</h3>
             <h5> Zack Snyder aparece ao lado da equipe em foto de bastidores</h5>
           </div>
@@ -66,7 +70,7 @@
 
       <div id="f-04" class="carousel-item">
         <img class="d-block w-100 imagem-carrossel" src="src/posts/img_posts/filmes/f_04.png" alt="Mulher-Maravilha">
-          <div class="carousel-caption d-none d-md-block texto-carrossel">
+          <div class="carousel-caption d-none d-md-block">
             <h3>Do exército a Diana Prince: como Gal Gadot virou a Mulher-Maravilha</h3>
             <h5>Confira a inusitada trajetória da atriz</h5>
           </div>
@@ -74,7 +78,7 @@
 
       <div id="f-05" class="carousel-item">
         <img class="d-block w-100 imagem-carrossel" src="src/posts/img_posts/filmes/f_05.jpg" alt="Era Uma Vez em... Hollywood">
-          <div class="carousel-caption d-none d-md-block texto-carrossel">
+          <div class="carousel-caption d-none d-md-block">
             <h3>Quentin Tarantino lançará romance de Era Uma Vez em... Hollywood</h3>
             <h5>Diretor também prepara livro sobre o cinema dos anos 70</h5>
           </div>
@@ -112,24 +116,19 @@
     </main>
     <div id="modal_bg">
         <div id="modal">
-            <a id="close_modal">
-                <i class="return_main">Voltar</i>
-            </a>
-            <div id="conteudo">
-                <iframe src="" frameborder="0"></iframe>
-            </div>
+          <div id="modal-buttons">
+            <a id="anterior">Anterior</a>
+            <a id="close_modal">Fechar</a>
+            <a id="proxima">Próxima</a>
+          </div>
+            <div id="conteudo"></div>
         </div>
-    </div>
     </div>
     <footer>
       <p>Cinedevs, 2020</p>
       <p>Todos os direitos reservados aos detentores</p>
-      <p><strong><a href="http://www.freepik.com">Designed by macrovector / Freepik</a></strong></p>
+      <p>Icons <strong><a href="http://www.freepik.com">Designed by: macrovector / Freepik</a></strong></p>
     </footer>
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./src/scripts/bundle.js"></script>
 </body>
 </html>

@@ -23,8 +23,8 @@ import {get} from "axios"
 function setIframe(url){
     get(url)
     .then(response=>{
-        let frame = document.querySelector("#conteudo > iframe")
-        frame.setAttribute('src', url)
+        let frame = document.querySelector("#conteudo")
+        frame.innerHTML = response.data
     })
     .catch(err=>console.warn(err))
 }
