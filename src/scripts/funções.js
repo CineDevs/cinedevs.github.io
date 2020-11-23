@@ -7,14 +7,14 @@ function loadPage() {
 function setURL(div){
     let id = div.getAttribute("id")
     let pasta = "filmes"
-    let urlPag = `src/posts/JSON/`
+    let urlPag = `src/posts/HTML/`
     
-    if(id === "sobre") urlPag += `${id}.json`
+    if(id === "sobre") urlPag += `${id}.html`
     else if(id.includes("s-")){
         pasta = "series"
-        urlPag += `${pasta}/${id}.json`
+        urlPag += `${pasta}/${id}.html`
     }
-    else urlPag += `${pasta}/${id}.json`
+    else urlPag += `${pasta}/${id}.html`
     
     return urlPag
 }
