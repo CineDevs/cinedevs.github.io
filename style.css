@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,11 +8,14 @@ body {
 }
 /* inicio cabeçalho */
 header {
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     background-color: rgb(0, 0, 0);
     padding-left: 10vw;
     padding-right: 10vw;
+    box-shadow: 0px 20px 10px rgba(10,22,15, 0.21);
+    z-index: 1;
 }
 
 #logo_div, #tags, #social, #caixa_busca
@@ -23,10 +27,11 @@ header {
 }
 
 #logo_div{
-    display: flex;
     flex-flow: column nowrap;
-    height: fit-content;
-    margin: auto;
+}
+
+#logo_div img{
+    margin-top: 3px;
 }
 
 #logo_div>p{
@@ -64,19 +69,33 @@ header {
 #tags>a:hover{
     transform: scale3d(1.3,1.3,1.2);
     color: gold;
-    font-weight: bold;
 }
 
-.s_icon{
-    
+.s_icon{    
     width: 60px;
     height: 60px;
 }
 /* Fim cabeçalho */
+/*Carrossel*/
 .imagem-carrossel {
-    height: 500px;
+    max-height: 500px;
+    width: auto;
 }
 
+.carousel-item > div{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 130px;
+    left: 0;
+    bottom: 0;
+}
+
+.carousel-control-prev{
+    left: 3%;
+}
+.carousel-control-next{
+    right: 3%;
+}
 
 .texto-carrossel {
     background-color: rgba(0,0, 0, 0.3);
@@ -85,8 +104,18 @@ header {
     padding: 0;
     margin-bottom: 20px;
 }
-
-
+    
+.carousel-control-prev, .carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    top: 40%;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*fim Carrossel*/
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -105,6 +134,7 @@ header {
     text-align: center;
     justify-content: center;
 }
+
 .sessao1 {
     display: flex;
     flex-direction: row;
@@ -118,5 +148,26 @@ header {
 .sessao3 {
     display: grid;
 	grid-template-columns: 2fr 1fr;
-	grid-gap: 10px;
+    grid-gap: 10px;}
+
+
+footer>p{
+    margin: 0;
+    font-size: 15px;
+    padding-left: 100px;
+}
+
+footer a{
+    color: gold;
+}
+
+footer a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #000000;
+    color: #fff;
+
 }
