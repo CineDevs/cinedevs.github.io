@@ -1,7 +1,10 @@
-import {loadPage} from "./funções"
+import {loadPage,closeModal, next, prev} from "./funções"
 
-let carousel = document.querySelectorAll(".carousel-item")
-carousel.forEach(item => item.onclick=loadPage)
+const closeModalBtn = document.querySelector("#close_btn")
+closeModalBtn.onclick = closeModal
 
-let sobre = document.querySelector("#sobre")
+const carousel = document.querySelectorAll(".carousel-item")
+carousel.forEach(item => item.onclick = loadPage)
+
+const sobre = document.querySelector("#sobre")
 sobre.onclick = loadPage
