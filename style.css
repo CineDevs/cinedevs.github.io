@@ -109,34 +109,40 @@ header {
 }
 /*fim Carrossel*/
 /*Modal*/
-#modal_bg{
-    visibility: hidden;
+/* modal btns */
+#modal_bg i{
+    padding: 5px;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
-#modal_bg-activ{
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 100px;
-}
-
-#modal, #conteudo{
-    border: 0;
-    padding: 0;
+#modal_bg i:hover{
+    background-color: rgba(204, 204, 204, 0.5);
 }
 
 #next_btn, #previous_btn{
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
     top: 60%;
 }
+
 #close_btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
     margin-top: 10px;
 }
+
+#close_btn:hover{
+    background-color: rgba(255, 0, 0, 0.7) !important;
+    color: #fff;
+}
+
 #next_btn{
     right: 20px;
 }
@@ -144,12 +150,42 @@ header {
 #previous_btn{
     left: 20px;
 }
+/* fim modal btns */
+
+#modal_bg{
+    visibility: hidden;
+}
+
+#modal_bg.active{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+}
+
+
+#modal, #conteudo{
+    border: 0;
+    padding: 0;
+}
+
 #modal{
     margin-top: 50px;
     min-width: 800px;
-    max-width: 64vw;
+    width: 64vw;
     display: flex;
+    flex-direction: column;
     text-align: justify;
+}
+
+#youtube-player, #conteudo img{
+    max-height: 400px;
+    width: 64vw;
 }
 
 #conteudo h1{
@@ -164,10 +200,15 @@ header {
 /*Fim modal*/
 
 /*Rodapé*/
+footer{
+    background-color: #000000;
+    color: #fff;
+    bottom: 0;
+}
 footer>p{
     margin: 0;
     font-size: 15px;
-    padding-left: 100px;
+    padding-left: 220px;
 }
 
 footer a{
@@ -179,8 +220,11 @@ footer a:hover{
     text-decoration: underline;
 }
 
-footer{
-    background-color: #000000;
-    color: #fff;
+
+#modalFooter{
+    position: relative;
+    width: 98.8vw;
+    left: -16.2vw;
+    bottom: 0;
 }
 /*Fim rodapé*/
