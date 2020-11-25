@@ -1,345 +1,349 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* inicio cabeçalho */
 header {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: rgb(0, 0, 0);
-    padding-left: 10vw;
-    padding-right: 10vw;
-    box-shadow: 0px 20px 10px rgba(10,22,15, 0.21);
-    z-index: 1;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: rgb(0, 0, 0);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  box-shadow: 0px 20px 10px rgba(10, 22, 15, 0.21);
+  z-index: 1;
 }
 
-#logo_div, #tags, #social, #caixa_busca
-{
-    display: flex;
-    flex-flow: row nowrap;
-    height: fit-content;
-    margin: auto;
+#logo_div,
+#tags,
+#social,
+#caixa_busca {
+  display: flex;
+  flex-flow: row nowrap;
+  height: fit-content;
+  margin: auto;
 }
 
-#logo_div{
-    flex-flow: column nowrap;
+#logo_div {
+  flex-flow: column nowrap;
 }
 
-#logo_div img{
-    margin-top: 3px;
+#logo_div img {
+  margin-top: 3px;
 }
 
-#logo_div>p{
-    font-size: 2rem;
-    margin: auto;
-    text-align: center;
-    color: gold;
-    font-weight: bolder;
+#logo_div > p {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  color: gold;
+  font-weight: bolder;
 }
 
-#img_logo{
-    height: 50px;
-    transform: rotateZ(-15deg);
-    margin: 0;
-    padding: 0;
+#img_logo {
+  height: 50px;
+  transform: rotateZ(-15deg);
+  margin: 0;
+  padding: 0;
 }
 
-#logo_div, #social{
-    display: flex;
-    flex: 1;
+#logo_div,
+#social {
+  display: flex;
+  flex: 1;
 }
 
-#tags{
-    display: flex;
-    justify-content: space-around;
-    flex: 2;
+#tags {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
 }
 
-#tags>a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+#tags > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-#tags>a:hover{
-    transform: scale3d(1.3,1.3,1.2);
-    color: gold;
+#tags > a:hover {
+  transform: scale3d(1.3, 1.3, 1.2);
+  color: gold;
 }
 
-.s_icon{    
-    width: 60px;
-    height: 60px;
+.s_icon {
+  width: 60px;
+  height: 60px;
 }
 /* Fim cabeçalho */
 /*Carrossel*/
 .imagem-carrossel {
-    max-height: 500px;
-    width: auto;
+  max-height: 500px;
+  width: auto;
 }
 
-.carousel-item > div{
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100vw;
-    height: 130px;
-    left: 0;
-    bottom: 0;
+.carousel-item:hover {
+  cursor: pointer;
 }
 
-.carousel-control-prev{
-    left: 3%;
+.carousel-item > div {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 130px;
+  left: 0;
+  bottom: 0;
 }
-.carousel-control-next{
-    right: 3%;
+
+.carousel-control-prev {
+  left: 3%;
+}
+.carousel-control-next {
+  right: 3%;
 }
 
 .texto-carrossel {
-    background-color: rgba(0,0, 0, 0.3);
-    max-width: 1400px;
-    margin: 20px;
-    padding: 0;
-    margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 1400px;
+  margin: 0;
+  padding: 0 auto;
+  margin-bottom: 0;
 }
-    
-.carousel-control-prev, .carousel-control-next{
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    top: 40%;
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  top: 40%;
 }
-.carousel-control-prev:hover, .carousel-control-next:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*fim Carrossel*/
 
 /*posts*/
-.grid {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 10px;
-    padding-top: 10px;
-    text-align: center;
+.noticia:hover {
+  cursor: pointer;
+  filter: grayscale();
+  transform: scale3d(0.95 , 0.95 , 0.95);
+  transition-duration: 500ms;
 }
 
-    
-
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
 
 .lateral > div {
-    margin-bottom: 10px;
-    background-color:black;
-    color:white;
-    justify-content: center;
-    
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  justify-content: center;
 }
 
 .lateral img {
-   min-height: 200px;
-   width: 100%;
+  min-height: 200px;
+  width: 100%;
 }
-
-
 
 .sessao1 {
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   gap: 10px;
-    
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
 }
- .sessao1 img {
-     min-height: 300px;
- }
-
-
+.sessao1 img {
+  min-height: 300px;
+}
 
 .sessao2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
-.sessao2 img{
-    min-width: 300px;
-    min-height: 200px;
+.sessao2 img {
+  min-width: 300px;
+  min-height: 200px;
 }
 
 .sessao3 {
-    display: grid;
-	grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
-    
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
 }
 
-.sessao3 :nth-child(1){
-    
-    grid-row: 1 / 3;
-    
+.sessao3 :nth-child(1) {
+  grid-row: 1 / 3;
 }
 .sessao3 img {
-    width: 100%;
-    
+  width: 100%;
 }
-.sessao3 :nth-child(3) img{
-    
-    min-height: 200px;
-    
+.sessao3 :nth-child(3) img {
+  min-height: 200px;
 }
 
 .sessao4 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 .sessao4 img {
-    height: 200px;
-    width: 330px;
+  height: 200px;
+  width: 330px;
 }
 
 @media (max-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-    .lateral {
-        display:flex ;
-        overflow: scroll;
-    }
-    .lateral > div {
-        flex: 1 0 200px;
-        margin: 0 10px;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .lateral {
+    display: flex;
+    overflow: scroll;
+  }
+  .lateral > div {
+    flex: 1 0 200px;
+    margin: 0 10px;
+  }
 
-    .sessao2 {
-        grid-template-columns: 1fr;
-    }
-    .sessao3 {
-        grid-template-columns: 1fr;
-    }
-    
-    .sessao4 { 
-        grid-template-columns: 1fr ;
-    }
- }
+  .sessao2 {
+    grid-template-columns: 1fr;
+  }
+  .sessao3 {
+    grid-template-columns: 1fr;
+  }
+
+  .sessao4 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /*Modal*/
 /* modal btns */
-#modal_bg i{
-    padding: 5px;
-    background-color: #ccc;
-    cursor: pointer;
+#modal_bg i {
+  padding: 5px;
+  background-color: #ccc;
+  cursor: pointer;
 }
 
-#modal_bg i:hover{
-    background-color: rgba(204, 204, 204, 0.5);
+#modal_bg i:hover {
+  background-color: rgba(204, 204, 204, 0.5);
 }
 
-#next_btn, #previous_btn{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    top: 60%;
+#next_btn,#previous_btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  top: 60%;
 }
 
-#close_btn{
-    width: 35px;
-    height: 35px;
-    border-radius: 20px;
-    margin-top: 10px;
+#close_btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
-#close_btn:hover{
-    background-color: rgba(255, 0, 0, 0.7) !important;
-    color: #fff;
+#close_btn:hover {
+  background-color: rgba(255, 0, 0, 0.7) !important;
+  color: #fff;
 }
 
-#next_btn{
-    right: 20px;
+#next_btn {
+  right: 20px;
 }
 
-#previous_btn{
-    left: 20px;
+#previous_btn {
+  left: 20px;
 }
 /* fim modal btns */
 
-#modal_bg{
-    visibility: hidden;
+#modal_bg {
+  visibility: hidden;
 }
 
-#modal_bg.active{
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-    visibility: visible;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 100px;
+#modal_bg.active {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 100px;
 }
 
-
-#modal, #conteudo{
-    border: 0;
-    padding: 0;
+#modal,
+#conteudo {
+  border: 0;
+  padding: 0;
 }
 
-#modal{
-    margin-top: 50px;
-    min-width: 800px;
-    width: 64vw;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
+#modal {
+  margin-top: 50px;
+  min-width: 800px;
+  width: 64vw;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
 }
 
-#youtube-player, #conteudo img{
-    max-height: 400px;
-    width: 64vw;
+#youtube-player,
+#conteudo img {
+  max-height: 400px;
+  width: 64vw;
 }
 
-#conteudo h1{
-    line-height: 40px;
-    font-size: 2.5em;
+#conteudo h1 {
+  line-height: 40px;
+  font-size: 2.5em;
 }
 
-#conteudo h2{
-    font-size: 1.2rem;
-    font-weight: bolder;
+#conteudo h2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 /*Fim modal*/
 
 /*Rodapé*/
-footer{
-    background-color: #000000;
-    color: #fff;
-    bottom: 0;
+footer {
+  background-color: #000000;
+  color: #fff;
+  bottom: 0;
 }
 
-footer>p{
-    margin: 0;
-    font-size: 15px;
-    padding-left: 220px;
+footer > p {
+  margin: 0;
+  font-size: 15px;
+  padding-left: 220px;
 }
 
-footer a{
-    color: gold;
+footer a {
+  color: gold;
 }
 
-footer a:hover{
-    color: gold;
-    text-decoration: underline;
+footer a:hover {
+  color: gold;
+  text-decoration: underline;
 }
 
-#modalFooter{
-    position: relative;
-    width: 98.8vw;
-    left: -16.2vw;
-    bottom: 0;
+#modalFooter {
+  position: relative;
+  width: 98.8vw;
+  left: -16.2vw;
+  bottom: 0;
 }
 /*Fim rodapé*/
