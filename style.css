@@ -142,6 +142,9 @@ header {
     flex-wrap: nowrap;
     grid-gap: 10px;
 }
+.sessao1 :nth-child(2){
+    max-height: 300px;
+}
 
 .sessao2 {
     display: grid;
