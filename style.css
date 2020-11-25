@@ -126,6 +126,8 @@ header {
     text-align: center;
 }
 
+    
+
 
 .lateral > div {
     margin-bottom: 10px;
@@ -143,11 +145,15 @@ header {
 
 
 .sessao1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    grid-gap: 10px;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 10px;
+    
 }
+ .sessao1 img {
+     min-height: 300px;
+ }
+
 
 
 .sessao2 {
@@ -155,7 +161,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-
+.sessao2 img{
+    min-width: 300px;
+    min-height: 200px;
+}
 
 .sessao3 {
     display: grid;
@@ -171,6 +180,7 @@ header {
 }
 .sessao3 img {
     width: 100%;
+    
 }
 .sessao3 :nth-child(3) img{
     
@@ -183,10 +193,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-/*.sessao4 img {
-    height: 100%;
-    width: 100%;
-}*/
+.sessao4 img {
+    height: 200px;
+    width: 330px;
+}
 
 @media (max-width: 600px) {
     .grid {
