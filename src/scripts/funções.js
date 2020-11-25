@@ -1,5 +1,7 @@
 const modal = document.querySelector("#modal_bg")
 const carrossel = document.querySelector(".carousel-indicators")
+const prevBtn = document.querySelector("#previous_btn")
+const nxtBtn = document.querySelector("#next_btn")
 let id = "" 
 function loadPage() {
     id=this.getAttribute("id")
@@ -9,8 +11,8 @@ function loadPage() {
 function setURL(){
     let pasta = "filmes"
     let urlPag = `src/posts/HTML/`
-    const prevBtn = document.querySelector("#previous_btn")
-    const nxtBtn = document.querySelector("#next_btn")
+    prevBtn.style.visibility = "visible"
+    nxtBtn.style.visibility = "visible"
     
     if(id === "sobre"){
         urlPag += `${id}.html`
@@ -23,11 +25,13 @@ function setURL(){
     }
     else urlPag += `${pasta}/${id}.html`
     
-    prevBtn.setAttribute("title",`${id}`)
+    prevBtn.setAttribute("name",`${id}`)
     prevBtn.onclick = prev
-    nxtBtn.setAttribute("title",`${id}`)
+    nxtBtn.setAttribute("name",`${id}`)
     nxtBtn.onclick = next
     
+    document.body.scrollTop = 0 //Safari
+    document.documentElement.scrollTop = 0
     setIframe(urlPag)
 }
 
@@ -53,14 +57,16 @@ const showModal= function(){
     carrossel.style.visibility = "hidden"
 }
 const closeModal = function (){
-    modal.removeAttribute("class")
     let conteudo = document.querySelector("#conteudo")
+    modal.removeAttribute("class")
+    nxtBtn.style.visibility = "hidden"
+    prevBtn.style.visibility = "hidden"
     carrossel.style.visibility = "visible"
     conteudo.innerHTML = ""
 }
 
 const next= function(){  
-    const titleBtn = this.getAttribute("title")
+    const titleBtn = this.getAttribute("name")
     const idTxt = titleBtn.substr(0,2)
     
     let idNum = Number(titleBtn.substr(2))
@@ -71,7 +77,7 @@ const next= function(){
 }
 
 const prev = function(){
-    const titleBtn = this.getAttribute("title")
+    const titleBtn = this.getAttribute("name")
     const idTxt = titleBtn.substr(0,2)
     
     let idNum = Number(titleBtn.substr(2))
