@@ -136,7 +136,7 @@ header {
     text-align: center;
     justify-content: center;
 }
-
+ 
 .sessao1 {
     display: flex;
     flex-direction: row;
@@ -156,6 +156,15 @@ header {
     grid-gap: 10px;
 }
 
+.sessao3 {
+
+}
+
+.sessao4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
 
 
 /*Modal*/
