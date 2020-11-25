@@ -141,7 +141,13 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+    grid-gap: 10px;
+}
+
+.sessao2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 .sessao3 {
