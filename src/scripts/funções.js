@@ -1,4 +1,5 @@
 const modal = document.querySelector("#modal_bg")
+const grid = document.querySelector(".grid")
 const carrossel = document.querySelector(".carousel-indicators")
 const prevBtn = document.querySelector("#previous_btn")
 const nxtBtn = document.querySelector("#next_btn")
@@ -53,10 +54,15 @@ function setIframe(url){
 }
 
 const showModal= function(){
+    const grid = document.querySelector(".grid")
     modal.setAttribute("class","active")
     carrossel.style.visibility = "hidden"
+    grid.remove()
 }
+
 const closeModal = function (){
+    const newscontainer = document.querySelector(".container-fluid")
+    newscontainer.appendChild(grid)
     let conteudo = document.querySelector("#conteudo")
     modal.removeAttribute("class")
     nxtBtn.style.visibility = "hidden"
