@@ -168,8 +168,10 @@ header {
   gap: 10px;
 }
 .sessao1 img {
- height: 300px;
+  height: 300px;
+  width: 100%;
 }
+
 
 .legenda {
   display: grid;
@@ -180,11 +182,12 @@ header {
 }
 
 .legenda h5 {
-  background: rgb(0, 0, 0, 0.1);
+  background: rgb(0, 0, 0, 0.2);
   color: white;
   grid-column: 1;
   grid-row: 2;
   padding: 5px;
+  margin: 0;
 }
 
 .sessao2 {
@@ -216,6 +219,9 @@ header {
   min-height: 200px;
 }
 
+.img-rem img{
+  min-height: 250px;
+}
 .sessao4 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
