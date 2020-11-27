@@ -16,6 +16,8 @@ function setURL(){
     nxtBtn.style.visibility = "visible"
     
     if(id === "sobre"){
+        const body= document.querySelector("body")
+        body.style.overflow="hidden"
         urlPag += `${id}.html`
         prevBtn.style.visibility = "hidden"
         nxtBtn.style.visibility = "hidden"
@@ -61,6 +63,8 @@ const showModal= function(){
 }
 
 const closeModal = function (){
+    const body= document.querySelector("body")
+    body.style.overflow="visible"
     const newscontainer = document.querySelector(".container-fluid")
     newscontainer.appendChild(grid)
     let conteudo = document.querySelector("#conteudo")
@@ -77,7 +81,7 @@ const next= function(){
     
     let idNum = Number(titleBtn.substr(2))
     idNum == 25?idNum = 1:idNum++
-
+    
     idNum<10?id = `${idTxt}0${idNum}`: id = `${idTxt}${idNum}`
     setURL()
 }
@@ -88,7 +92,7 @@ const prev = function(){
     
     let idNum = Number(titleBtn.substr(2))
     idNum == 1?idNum = 25:idNum--
-
+    
     idNum<10?id = `${idTxt}0${idNum}`: id = `${idTxt}${idNum}`    
     setURL()
 }

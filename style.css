@@ -341,9 +341,9 @@ footer a:hover {
 }
 
 #modalFooter {
-  position: relative;
-  width: 98.8vw;
-  left: -16.2vw;
-  bottom: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: auto;
 }
 /*Fim rodapé*/
