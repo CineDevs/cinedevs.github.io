@@ -5,6 +5,8 @@
 ## Projeto final da disciplina Gerência de Configurações e Mudanças
 #### O projeto consiste em um modelo de página destinada à notícias e resenhas sobre séries e filmes.
 
+Alunos: @ewertomac e @Rebehk
+
 * **Framework utilizado:**
   * Bootstrap.
   
