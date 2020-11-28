@@ -3,13 +3,14 @@
 <h1 align= "center"> <a href="https://cinedevs.github.io/">Cinedevs</a></h1>
 
 ## Projeto final da disciplina Gerência de Configurações e Mudanças
+
 #### O projeto consiste em um modelo de página destinada à notícias e resenhas sobre séries e filmes.
 
-Alunos: @ewertomac e @Rebehk
+Alunos:  [Ewerton](http://github.com/ewertonmac) e [Rebehk](http://github.com/Rebehk)
 
 * **Framework utilizado:**
   * Bootstrap.
-  
+
 * **Dependência:**
   * Axios.
 
@@ -17,6 +18,7 @@ Alunos: @ewertomac e @Rebehk
 
   * Babel;
   * Webpack.
-  
+
 ##### Instalando as dependências:
+
 ```npm install``` ou ```yarn install```
